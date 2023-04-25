@@ -6,7 +6,7 @@
 <nav class="flex justify-between sm:justify-center bg-pink-800 p-1 items-center">
     <div class="flex items-center gap-2 sm:ml-4">
       <img class="h-10 w-14" src="https://cool-cloud-2974.fly.dev/api/files/x5e0bsbfhuqtpd6/8nlbeyzxeox2to5/group_1_wkXMUld7wH.png" alt="logo S V N school " />
-      <p class="text-white text-xl tracking-wider font-thin">SHISHU VIDYA NIKETAN</p>
+      <p class="text-white text-xl tracking-wider font-">SHISHU VIDYA NIKETAN</p>
     </div>
     <div class="mr-2 sm:hidden">
       <button on:click={()=> show = !show}>

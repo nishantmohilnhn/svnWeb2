@@ -20,9 +20,10 @@
     </div>
   </nav>
   {#if show}
+  <div class="">
   <div 
   transition:fly="{{delay:50, duration: 300, x: 100, easing: quintOut}}"
-  class="fixed right-0 h-screen w-5/6  bg-blue-900  sm:hidden z-10 ">
+  class="fixed right-0 h-screen w-5/6  bg-blue-900  sm:hidden z-50 ">
     <div class="ml-11 mt-14 font-semibold text-white">
       <a on:click={()=> show = !show}  class="mt-7 flex gap-2" href="/">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -68,6 +69,7 @@
     </a>
     </div>
   </div>
+</div>
   {/if}
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');

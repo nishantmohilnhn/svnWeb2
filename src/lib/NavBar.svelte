@@ -3,10 +3,13 @@
 	import { quintOut } from 'svelte/easing';
     let show = false;
 </script>
-<nav class="flex justify-between sm:justify-center bg-pink-800 p-1 items-center">
+<nav class="flex justify-between sm:justify-center bg-blue-900 p-1 items-center">
     <div class="flex items-center gap-2 sm:ml-4">
-      <img class="h-10 w-14" src="https://cool-cloud-2974.fly.dev/api/files/x5e0bsbfhuqtpd6/8nlbeyzxeox2to5/group_1_wkXMUld7wH.png" alt="logo S V N school " />
-      <p class="text-white text-xl tracking-wider font-">SHISHU VIDYA NIKETAN</p>
+      <img class=" w-16 sm:w-20 " src="https://cool-cloud-2974.fly.dev/api/files/x5e0bsbfhuqtpd6/g3tgqzc5h447c3b/logof_v7rY14bi4S.png" alt="logo S V N school " />
+      <div>
+        <p class="text-white text-lg sm:text-xl leading-tight " style="font-family: 'Braah One', sans-serif;">SHISHU VIDYA NIKETAN</p>
+        <p class=" text-sm font-thin leading-tight text-white">SENIOR SECONDARY SCHOOL <br>NAHAN</p>
+      </div>
     </div>
     <div class="mr-2 sm:hidden">
       <button on:click={()=> show = !show}>
@@ -18,8 +21,8 @@
   </nav>
   {#if show}
   <div 
-  transition:fly="{{delay:50, duration: 300, x: 100, opacity: 0.5, easing: quintOut}}"
-  class="fixed right-0 h-screen w-5/6  bg-pink-800 sm:hidden z-10 ">
+  transition:fly="{{delay:50, duration: 300, x: 100, easing: quintOut}}"
+  class="fixed right-0 h-screen w-5/6  bg-blue-900  sm:hidden z-10 ">
     <div class="ml-11 mt-14 font-semibold text-white">
       <a on:click={()=> show = !show}  class="mt-7 flex gap-2" href="/">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -67,5 +70,5 @@
   </div>
   {/if}
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
   </style>

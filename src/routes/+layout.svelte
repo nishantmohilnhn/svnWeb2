@@ -4,7 +4,7 @@
 import "../app.css";
   </script>
 <div class="min-h-screen flex flex-col">
-  <header class=""><NavBar/> <div class="hidden sm:block"><Navmenu/></div></header>
+  <header class=""><NavBar/></header>
 
   <div class="flex-1 flex flex-col sm:flex-row">
     <main class="flex-1 p-1">  <slot /> </main>
